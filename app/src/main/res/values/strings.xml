@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">Mcafeteria</string>
+    <string name="pref_file">com.chandan.mcafeteria.preferencefile</string>
+    <string name="pref_login_status">com.chandan.mcafeteria.login</string>
+    <string name="pref_user_name">com.chandan.mcafeteria.username</string>
+    <string name="pref_name">com.chandan.mcafeteria.user</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orderfood">Order Now</string>
+    <string name="open">Open</string>
+    <string name="fav_title">Favorites</string>
+    <string name="fav_sub">We care for Your Favorite</string>
+    <string name="close">Close</string>
+    <string name="delivery_data">Cabin/Room:F23\nBlock:A\nFloor:2</string>
+    <string name="freetext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        of Lorem Ipsum.</string>
+    <string name="delivery_place"><i>Delivery Place</i></string>
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+    <string name="username">UserName</string>
+    <string name="write_your_review">write your review!!</string>
+    <string name="submit">submit</string>
+    <string name="profile">Profile</string>
+    <string name="rate_us">Rate us</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="name">Name</string>
+    <string name="krishna_enginnering_college">Krishna Enginnering College</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="food">Food:</string>
+    <string name="pay">Pay:</string>
+    <string name="size">Size:</string>
+    <string name="cod_is_available_only">* COD is available only</string>
+    <string name="change">change</string>
+    <string name="buy">Buy</string>
+    <string name="cancle">Cancle</string>
+    <string name="food_menu">Food Menu</string>
+    <string name="favorite">Favorite</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="notification">Notification</string>
+    <string name="food_name">Food Name</string>
+    <string name="price">Price</string>
+    <string name="show_all">Show all</string>
+    <string name="wallet_details_here">Wallet Details here</string>
+    <string name="all_your_notification_here">All Your Notification Here</string>
+    <string name="user_name">user_name</string>
+    <string name="_22_10_2018">22/10/2018</string>
+    <string name="comment_here_what_is_want">Comment here what is want</string>
+    <string name="foodname">FoodName</string>
+
+</resources>

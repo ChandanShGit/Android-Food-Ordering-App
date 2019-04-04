@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_rmenu"
+        android:icon="@drawable/rmenu"
+        android:title="@string/food_menu" />
+    <item
+        android:id="@+id/bottom_fav"
+        android:icon="@drawable/fav_icon_24dp"
+        android:title="@string/favorite" />
+    <item
+        android:id="@+id/bottom_orders"
+        android:icon="@drawable/trans"
+        android:title="@string/your_orders" />
+    <item
+        android:id="@+id/bottom_notification"
+        android:icon="@drawable/notification"
+        android:title="@string/notification" />
+
+</menu>

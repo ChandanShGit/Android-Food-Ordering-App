@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.canteen.chandan.mcafeteria.FoodClickedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/fc_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="fitXY"
+                         />
+
+
+                    <TextView
+                        android:id="@+id/fc_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fc_image"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/food_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/fc_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fc_name"
+                        android:layout_alignStart="@+id/fc_name"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/price"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/fc_order_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/fc_image"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:background="@color/orangeRed"
+                        android:text="@string/orderfood"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/fc_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Description"
+                        android:layout_alignStart="@+id/review" />
+
+                    <TextView
+                        android:id="@+id/review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fc_desc"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/review"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/review_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignBottom="@+id/review"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/review"
+                        />
+
+                    <RatingBar
+                        android:id="@+id/fc_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/review"
+                        android:layout_alignStart="@id/review"
+                        android:layout_marginTop="5dp"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp" />
+
+                    <TextView
+                        android:id="@+id/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/review"
+                        android:text="@string/description"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/fc_fav_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignTop="@+id/review"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="@drawable/fav_filled_icon_24dp" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/rv_user_profile"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/com_pro"
+                        />
+
+                    <TextView
+                        android:id="@+id/rv_user_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_toEndOf="@+id/rv_user_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:layout_marginStart="8dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/review_et"
+                        android:layout_below="@+id/rv_user_profile"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/write_your_review"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/rv_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/review_et"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/orangeRed"
+                        android:text="@string/submit"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/Gray"
+                        android:layout_below="@+id/rv_submit"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/comment_rv"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/rv_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/com_ex"
+                        android:layout_below="@+id/comment_rv"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show_all"
+                        android:layout_alignEnd="@+id/rv_submit"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@android:color/holo_green_dark"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

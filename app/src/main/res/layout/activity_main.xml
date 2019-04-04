@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mDL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.canteen.chandan.mcafeteria.MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/mainToolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <android.support.design.widget.BottomNavigationView
+
+            android:id="@+id/main_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/main_frame"
+            android:elevation="4dp"
+            app:itemBackground="@color/bottombar"
+            app:itemIconTint="@color/colorbottom"
+            app:itemTextColor="@color/colorbottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_frame"
+            app:menu="@menu/bottom_menu">
+
+        </android.support.design.widget.BottomNavigationView>
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/mainToolbar"
+            app:layout_constraintBottom_toTopOf="@+id/main_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainToolbar">
+        </FrameLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_slidenav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
