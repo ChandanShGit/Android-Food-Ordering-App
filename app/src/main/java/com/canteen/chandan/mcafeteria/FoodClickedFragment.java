@@ -67,7 +67,7 @@ public class FoodClickedFragment extends Fragment {
     private static ApiCall apiCall;
     private FoodDataMap dataMap;
     private String f_name,f_desc;
-    private ImageView fc_image;
+    private ImageView f_image;
     private long f_id,f_price;
     private float f_ratings;
     Dialog dialog;
@@ -91,7 +91,7 @@ public class FoodClickedFragment extends Fragment {
         dbcName = getData.getDBC();
 
         rv=view.findViewById(R.id.comment_rv);
-        fc_image=view.findViewById(R.id.fc_image) ;
+        f_image=view.findViewById(R.id.fc_image) ;
         nameTv = view.findViewById(R.id.fc_name);
         descTv = view.findViewById(R.id.fc_desc);
         priceTv=view.findViewById(R.id.fc_price);
@@ -143,7 +143,7 @@ public class FoodClickedFragment extends Fragment {
         f_ratings=Float.parseFloat(foodDataMap.getRating());
         f_id=Long.valueOf(foodDataMap.getId());
         f_price=Long.valueOf(foodDataMap.getPrice());
-        Picasso.with(ctx).load(foodDataMap.getImageUrl()).placeholder(R.drawable.load).into(fc_image);
+        Picasso.with(ctx).load(foodDataMap.getImageUrl()).placeholder(R.drawable.load).into(f_image);
         customer_id=Integer.valueOf(new PreConfig(ctx).readCardId());
 
 
